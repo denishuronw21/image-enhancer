@@ -21,7 +21,9 @@ const Home = () => {
       console.log(error)
       alert("Error while enhancing the message. Please try again later!!!")
     }
-  }
+    
+  };
+  
 
   return (
     <>
@@ -29,7 +31,7 @@ const Home = () => {
     <ImagePreview 
     loading={loading} 
     upload={uploadImage} 
-    enhanced={enhancedImage} />
+    enhanced={enhancedImage?.image} />
     </>
   )
 }
